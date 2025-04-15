@@ -198,52 +198,29 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* 產品小圖網格排列 */
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
 }
 
-.product-item {
+.product-grid .product-card {
+  width: 160px;
   background-color: #2a2a2a;
+  padding: 0.5rem;
   border-radius: 8px;
-  padding: 1rem;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
-.product-item:hover {
-  transform: scale(1.03);
+.product-grid .product-card:hover {
+  transform: scale(1.05);
 }
 
-.product-item img {
+.product-grid .product-card img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 0.8rem;
-}
-
-.product-item h3 {
+  border-radius: 4px;
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.product-item ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0.5rem;
-}
-
-.product-item li {
-  font-size: 0.9rem;
-  margin-bottom: 0.2rem;
-}
-
-.product-item a {
-  color: #00bfff;
-  font-size: 0.9rem;
 }
