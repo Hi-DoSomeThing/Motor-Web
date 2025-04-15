@@ -206,9 +206,9 @@ footer {
 }
 
 .product-grid .product-card {
-  width: 160px;
+  width: 260px;
   background-color: #2a2a2a;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
@@ -216,11 +216,42 @@ footer {
 }
 
 .product-grid .product-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .product-grid .product-card img {
   width: 100%;
   border-radius: 4px;
   margin-bottom: 0.5rem;
+}
+
+.product-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #00bfff;
+}
+
+.product-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.product-info li {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.product-info a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.product-info a:hover {
+  text-decoration: underline;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #ccc;
 }
