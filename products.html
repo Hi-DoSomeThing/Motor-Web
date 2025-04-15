@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>產品介紹 - 馬達產品</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-
 </head>
 <body>
   <header>
@@ -21,36 +20,34 @@
     </nav>
   </header>
 
-  <main class="product-list">
+  <main>
     <h2>產品介紹</h2>
-
-    <div class="product-card">
-      <img src="images/motor01.jpg" alt="馬達型號 A100">
-      <div class="product-info">
-        <h3>型號：A100</h3>
+    <section class="product-grid fade-in">
+      <!-- 每個產品卡片 -->
+      <div class="product-item">
+        <img src="images/motor01.jpg" alt="馬達型號 A123">
+        <h3>型號 A123</h3>
         <ul>
           <li>電壓：24V</li>
           <li>轉速：3000 RPM</li>
-          <li>扭力：2.5 Nm</li>
+          <li>扭力：0.5 Nm</li>
         </ul>
-        <a href="A100_spec.pdf" target="_blank">📄 規格書下載</a>
+        <a href="motor01.pdf" download>下載規格表</a>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="images/motor02.jpg" alt="馬達型號 B200">
-      <div class="product-info">
-        <h3>型號：B200</h3>
+      <div class="product-item">
+        <img src="images/motor02.jpg" alt="馬達型號 B456">
+        <h3>型號 B456</h3>
         <ul>
           <li>電壓：48V</li>
           <li>轉速：1500 RPM</li>
-          <li>扭力：5.0 Nm</li>
+          <li>扭力：1.2 Nm</li>
         </ul>
-        <a href="B200_spec.pdf" target="_blank">📄 規格書下載</a>
+        <a href="motor02.pdf" download>下載規格表</a>
       </div>
-    </div>
 
-    <!-- 你可以繼續複製 product-card 增加更多產品 -->
+      <!-- 你可以複製上面這塊繼續增加產品 -->
+    </section>
   </main>
 
   <footer>
